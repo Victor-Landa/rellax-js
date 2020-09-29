@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rellax JS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <section>
+    <h1>Rellax JS</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, provident?</p>
+    
+    <button>Subscribe now</button>
+
+    <img src="/images/hills.svg" class="hills rellax" alt="Hills" data-rellax-speed="2">
+    <img src="/images/sun.svg" class="sun rellax" alt="Sun" data-rellax-speed="5" data-rellax-percentage="0.6">
+    <img src="/images/cloud.svg" class="cloud rellax" alt="Cloud" data-rellax-speed="5" data-rellax-percentage="0.7">
+  </section>
+
+  <section>
+    <h2 data-scroll>Happy Coding!</h2>
+    <p data-scroll>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod eum similique ipsam dignissimos in vitae blanditiis velit, aperiam ullam sit sunt vel aliquid a dolores deleniti id mollitia quaerat. Odio.</p>
+  </section>
+
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+
+  <script>
+    ScrollOut({
+      threshold: .6
+    })
+
+    var rellax = new Rellax('.rellax');
+  </script>
+</body>
+</html>
